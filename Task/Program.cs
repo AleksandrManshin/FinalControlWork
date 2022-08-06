@@ -8,6 +8,19 @@
         Console.WriteLine("Введите слово: ");
         array[i] = Console.ReadLine();
     }
+
+    Console.WriteLine("Вывод слов которые имеют количество букв равное 3 и меньше");
+    Checking(array);
+}
+
+
+void Checking(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+            Console.Write(array[i] + "\t");
+    }
 }
 
 MainMethod();
